@@ -1,6 +1,7 @@
 C:\Users\symam\Documents\Builded Winform Apps\Music Player\MusicPlayer.exe
 C:\Users\symam\Documents\Builded Winform Apps\Music Player\MusicPlayer.dll
 C:\Users\symam\Documents\Builded Winform Apps\Music Player\MusicPlayer.runtimeconfig.json
+C:\Users\symam\Documents\Builded Winform Apps\Music Player\MusicPlayer.dll.config
 C:\Users\symam\Documents\Builded Winform Apps\Music Player\MusicPlayer.pdb
 C:\Users\symam\Documents\Builded Winform Apps\Music Player\FontAwesome.Sharp.dll
 C:\Users\symam\Documents\Builded Winform Apps\Music Player\TagLibSharp.dll

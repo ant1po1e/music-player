@@ -36,10 +36,28 @@ namespace MusicPlayer
             trackBarVolume.ValueChanged += trackBarVolume_ValueChanged;
             textBoxFilter.TextChanged += textBoxFilter_TextChanged;
 
-            progressTimer.Interval = 1000; 
+            progressTimer.Interval = 1000;
             progressTimer.Tick += ProgressTimer_Tick;
 
             UpdateLoopButtonText();
+
+            string lastSelectedFolder = Properties.Settings.Default.LastSelectedFolder;
+            if (Directory.Exists(lastSelectedFolder))
+            {
+                songPaths = Directory.GetFiles(lastSelectedFolder, "*.mp3").ToList();
+                FilterSongs();
+            }
+
+            if (Directory.Exists(lastSelectedFolder))
+            {
+                songPaths = Directory.GetFiles(lastSelectedFolder, "*.mp3").ToList();
+                FilterSongs();
+            }
+            else
+            {
+                Properties.Settings.Default.LastSelectedFolder = string.Empty;
+                Properties.Settings.Default.Save();
+            }
         }
 
         #region Events
@@ -79,6 +97,8 @@ namespace MusicPlayer
             {
                 if (folderBrowser.ShowDialog() == DialogResult.OK)
                 {
+                    Properties.Settings.Default.LastSelectedFolder = folderBrowser.SelectedPath;
+                    Properties.Settings.Default.Save(); // Save the path to settings
                     songPaths = Directory.GetFiles(folderBrowser.SelectedPath, "*.mp3").ToList();
                     FilterSongs();
                 }
@@ -201,12 +221,9 @@ namespace MusicPlayer
             }
             else
             {
-                currentSongIndex++; 
+                currentSongIndex++;
             }
-            listBoxSongs.SelectedIndex = currentSongIndex;
-            buttonPlayPause.IconChar = FontAwesome.Sharp.IconChar.Pause;
-            UpdateSongInfo();
-            player.controls.play();
+            PlayCurrentSong();
         }
 
         private void PlayPreviousSong()
@@ -218,6 +235,19 @@ namespace MusicPlayer
             else
             {
                 currentSongIndex--;
+            }
+            PlayCurrentSong();
+        }
+
+        private void PlayNextLoop()
+        {
+            if (currentSongIndex >= songPaths.Count - 1)
+            {
+                currentSongIndex = 0;
+            }
+            else
+            {
+                currentSongIndex++;
             }
             listBoxSongs.SelectedIndex = currentSongIndex;
             buttonPlayPause.IconChar = FontAwesome.Sharp.IconChar.Pause;
@@ -245,7 +275,7 @@ namespace MusicPlayer
                     }
                     else
                     {
-                        pictureBoxAlbum.Image = null; 
+                        pictureBoxAlbum.Image = null;
                     }
                 }
             }
@@ -264,11 +294,11 @@ namespace MusicPlayer
                 switch (currentLoopMode)
                 {
                     case LoopMode.LoopOne:
-                        player.controls.currentPosition = 0; 
-                        player.controls.play(); 
+                        player.controls.currentPosition = 0;
+                        player.controls.play();
                         break;
                     case LoopMode.LoopAll:
-                        PlayNextSong();
+                        PlayNextLoop();
                         break;
                     case LoopMode.NoLoop:
                     default:

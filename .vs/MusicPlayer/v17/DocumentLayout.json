@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|solutionrelative:musicplayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|c:\\users\\symam\\source\\repos\\musicplayer\\musicplayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|solutionrelative:musicplayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|c:\\users\\symam\\source\\repos\\musicplayer\\musicplayer\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|solutionrelative:musicplayer\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|C:\\Users\\symam\\source\\repos\\MusicPlayer\\musicplayer\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|solutionrelative:musicplayer\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|c:\\users\\symam\\source\\repos\\musicplayer\\musicplayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|solutionrelative:musicplayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C37E110-F4FD-429C-BA00-451123E6ABBA}|MusicPlayer\\MusicPlayer.csproj|C:\\Users\\symam\\source\\repos\\MusicPlayer\\musicplayer\\musicplayer.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -26,11 +30,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "MusicPlayer\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\Properties\\Settings.settings",
+              "RelativeToolTip": "MusicPlayer\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-08-14T11:54:54.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\Form1.cs",
+              "RelativeDocumentMoniker": "MusicPlayer\\Form1.cs",
+              "ToolTip": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\Form1.cs",
+              "RelativeToolTip": "MusicPlayer\\Form1.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAAwIsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T11:33:10.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\Form1.cs",
               "RelativeDocumentMoniker": "MusicPlayer\\Form1.cs",
@@ -48,54 +77,21 @@
               "RelativeDocumentMoniker": "MusicPlayer\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\Form1.Designer.cs",
               "RelativeToolTip": "MusicPlayer\\Form1.Designer.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAAAJEAAAAAAAAA",
+              "ViewState": "AQIAAO0AAAAAAAAAAAAAAA8BAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T02:16:35.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MusicPlayer",
               "DocumentMoniker": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\MusicPlayer.csproj",
               "RelativeDocumentMoniker": "MusicPlayer\\MusicPlayer.csproj",
               "ToolTip": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\MusicPlayer.csproj",
               "RelativeToolTip": "MusicPlayer\\MusicPlayer.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-13T00:50:37.789Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "795a3b16-2d29-4bd5-836c-ed6ff9d98221",
-        "Display": 1,
-        "X": 673,
-        "Y": 213,
-        "Width": 1246,
-        "Height": 792,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\Form1.cs",
-              "RelativeDocumentMoniker": "MusicPlayer\\Form1.cs",
-              "ToolTip": "C:\\Users\\symam\\source\\repos\\MusicPlayer\\MusicPlayer\\Form1.cs",
-              "RelativeToolTip": "MusicPlayer\\Form1.cs",
-              "ViewState": "AQIAALsAAAAAAAAAAAAmwM8AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T00:45:40.199Z",
+              "WhenOpened": "2024-08-13T00:50:37.789Z",
               "EditorCaption": ""
             }
           ]

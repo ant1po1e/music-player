@@ -292,6 +292,7 @@
             Controls.Add(panel2);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Apolz Audio Player";
