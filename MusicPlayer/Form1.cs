@@ -29,11 +29,11 @@ namespace MusicPlayer
             InitializeComponent();
             player.PlayStateChange += Player_PlayStateChange;
             listBoxSongs.SelectedIndexChanged += listBoxSongs_SelectedIndexChanged;
-            customTrackBar1.Minimum = 0;
-            customTrackBar1.Maximum = 100;
-            customTrackBar1.Value = 50;
+            trackBarVolume.Minimum = 0;
+            trackBarVolume.Maximum = 100;
+            trackBarVolume.Value = 50;
             player.settings.volume = 50;
-            customTrackBar1.ValueChanged += trackBarVolume_ValueChanged;
+            trackBarVolume.ValueChanged += trackBarVolume_ValueChanged;
             textBoxFilter.TextChanged += textBoxFilter_TextChanged;
 
             progressTimer.Interval = 1000; 
@@ -65,7 +65,7 @@ namespace MusicPlayer
 
         private void trackBarVolume_ValueChanged(object sender, EventArgs e)
         {
-            player.settings.volume = customTrackBar1.Value;
+            player.settings.volume = trackBarVolume.Value;
         }
 
         private void textBoxFilter_TextChanged(object sender, EventArgs e)
@@ -118,11 +118,7 @@ namespace MusicPlayer
 
         private void buttonPrevious_Click(object sender, EventArgs e)
         {
-            if (currentSongIndex > 0)
-            {
-                currentSongIndex--;
-                PlayCurrentSong();
-            }
+            PlayPreviousSong();
         }
 
         private void buttonShuffle_Click(object sender, EventArgs e)
@@ -207,13 +203,26 @@ namespace MusicPlayer
             {
                 currentSongIndex++; 
             }
-            player.controls.play();
             listBoxSongs.SelectedIndex = currentSongIndex;
-            UpdateSongInfo();
-            progressTimer.Start();
             buttonPlayPause.IconChar = FontAwesome.Sharp.IconChar.Pause;
-            
-            
+            UpdateSongInfo();
+            player.controls.play();
+        }
+
+        private void PlayPreviousSong()
+        {
+            if (currentSongIndex == 0)
+            {
+                currentSongIndex = songPaths.Count - 1;
+            }
+            else
+            {
+                currentSongIndex--;
+            }
+            listBoxSongs.SelectedIndex = currentSongIndex;
+            buttonPlayPause.IconChar = FontAwesome.Sharp.IconChar.Pause;
+            UpdateSongInfo();
+            player.controls.play();
         }
 
         private void UpdateSongInfo()
