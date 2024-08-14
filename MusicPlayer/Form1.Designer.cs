@@ -32,7 +32,6 @@
             labelArtist = new Label();
             labelTitle = new Label();
             pictureBoxAlbum = new PictureBox();
-            trackBarVolume = new TrackBar();
             textBoxFilter = new TextBox();
             panel2 = new Panel();
             buttonShuffle = new FontAwesome.Sharp.IconButton();
@@ -45,14 +44,16 @@
             labelMaxDuration = new Label();
             buttonSelectFolder = new FontAwesome.Sharp.IconButton();
             progressBarMusic = new ProgressBar();
+            trackBarVolume = new TrackBar();
             listBoxSongs = new ListBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             progressTimer = new System.Windows.Forms.Timer(components);
             panel4 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAlbum).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)trackBarVolume).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBarVolume).BeginInit();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // labelArtist
@@ -87,32 +88,23 @@
             pictureBoxAlbum.TabIndex = 11;
             pictureBoxAlbum.TabStop = false;
             // 
-            // trackBarVolume
-            // 
-            trackBarVolume.AutoSize = false;
-            trackBarVolume.Location = new Point(818, 76);
-            trackBarVolume.Name = "trackBarVolume";
-            trackBarVolume.Size = new Size(222, 33);
-            trackBarVolume.TabIndex = 12;
-            // 
             // textBoxFilter
             // 
-            textBoxFilter.Location = new Point(750, 121);
+            textBoxFilter.Location = new Point(8, 12);
             textBoxFilter.Name = "textBoxFilter";
-            textBoxFilter.Size = new Size(290, 23);
+            textBoxFilter.Size = new Size(182, 23);
             textBoxFilter.TabIndex = 13;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(39, 55, 68);
-            panel2.Controls.Add(textBoxFilter);
             panel2.Controls.Add(pictureBoxAlbum);
             panel2.Controls.Add(labelTitle);
             panel2.Controls.Add(labelArtist);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1052, 150);
+            panel2.Size = new Size(795, 150);
             panel2.TabIndex = 18;
             // 
             // buttonShuffle
@@ -124,7 +116,7 @@
             buttonShuffle.IconColor = Color.FromArgb(10, 181, 211);
             buttonShuffle.IconFont = FontAwesome.Sharp.IconFont.Auto;
             buttonShuffle.IconSize = 50;
-            buttonShuffle.Location = new Point(381, 26);
+            buttonShuffle.Location = new Point(207, 30);
             buttonShuffle.Name = "buttonShuffle";
             buttonShuffle.Size = new Size(60, 60);
             buttonShuffle.TabIndex = 19;
@@ -145,9 +137,9 @@
             panel3.Controls.Add(trackBarVolume);
             panel3.Controls.Add(buttonShuffle);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 466);
+            panel3.Location = new Point(0, 382);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1052, 125);
+            panel3.Size = new Size(795, 125);
             panel3.TabIndex = 19;
             // 
             // buttonLoopMode
@@ -161,7 +153,7 @@
             buttonLoopMode.IconColor = Color.FromArgb(10, 181, 211);
             buttonLoopMode.IconFont = FontAwesome.Sharp.IconFont.Solid;
             buttonLoopMode.IconSize = 50;
-            buttonLoopMode.Location = new Point(635, 26);
+            buttonLoopMode.Location = new Point(461, 30);
             buttonLoopMode.Name = "buttonLoopMode";
             buttonLoopMode.Size = new Size(60, 60);
             buttonLoopMode.TabIndex = 26;
@@ -177,7 +169,7 @@
             buttonPrevious.IconChar = FontAwesome.Sharp.IconChar.Backward;
             buttonPrevious.IconColor = Color.FromArgb(10, 181, 211);
             buttonPrevious.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            buttonPrevious.Location = new Point(447, 31);
+            buttonPrevious.Location = new Point(273, 35);
             buttonPrevious.Name = "buttonPrevious";
             buttonPrevious.Size = new Size(50, 50);
             buttonPrevious.TabIndex = 25;
@@ -192,7 +184,7 @@
             buttonNext.IconChar = FontAwesome.Sharp.IconChar.Forward;
             buttonNext.IconColor = Color.FromArgb(10, 181, 211);
             buttonNext.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            buttonNext.Location = new Point(579, 31);
+            buttonNext.Location = new Point(405, 35);
             buttonNext.Name = "buttonNext";
             buttonNext.Size = new Size(50, 50);
             buttonNext.TabIndex = 24;
@@ -207,7 +199,7 @@
             buttonPlayPause.IconChar = FontAwesome.Sharp.IconChar.Play;
             buttonPlayPause.IconColor = Color.FromArgb(10, 181, 211);
             buttonPlayPause.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            buttonPlayPause.Location = new Point(503, 21);
+            buttonPlayPause.Location = new Point(329, 25);
             buttonPlayPause.Name = "buttonPlayPause";
             buttonPlayPause.Size = new Size(70, 70);
             buttonPlayPause.TabIndex = 23;
@@ -219,7 +211,7 @@
             labelMinDuration.AutoSize = true;
             labelMinDuration.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelMinDuration.ForeColor = Color.White;
-            labelMinDuration.Location = new Point(294, 91);
+            labelMinDuration.Location = new Point(120, 95);
             labelMinDuration.Name = "labelMinDuration";
             labelMinDuration.Size = new Size(55, 18);
             labelMinDuration.TabIndex = 22;
@@ -230,7 +222,7 @@
             labelMaxDuration.AutoSize = true;
             labelMaxDuration.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelMaxDuration.ForeColor = Color.White;
-            labelMaxDuration.Location = new Point(726, 91);
+            labelMaxDuration.Location = new Point(552, 95);
             labelMaxDuration.Name = "labelMaxDuration";
             labelMaxDuration.Size = new Size(55, 18);
             labelMaxDuration.TabIndex = 14;
@@ -253,10 +245,18 @@
             // 
             // progressBarMusic
             // 
-            progressBarMusic.Location = new Point(358, 97);
+            progressBarMusic.Location = new Point(184, 101);
             progressBarMusic.Name = "progressBarMusic";
             progressBarMusic.Size = new Size(362, 12);
             progressBarMusic.TabIndex = 20;
+            // 
+            // trackBarVolume
+            // 
+            trackBarVolume.AutoSize = false;
+            trackBarVolume.Location = new Point(633, 80);
+            trackBarVolume.Name = "trackBarVolume";
+            trackBarVolume.Size = new Size(143, 33);
+            trackBarVolume.TabIndex = 12;
             // 
             // listBoxSongs
             // 
@@ -267,16 +267,17 @@
             listBoxSongs.ItemHeight = 18;
             listBoxSongs.Location = new Point(0, 150);
             listBoxSongs.Name = "listBoxSongs";
-            listBoxSongs.Size = new Size(1052, 316);
+            listBoxSongs.Size = new Size(795, 232);
             listBoxSongs.TabIndex = 0;
             listBoxSongs.SelectedIndexChanged += listBoxSongs_SelectedIndexChanged;
             // 
             // panel4
             // 
+            panel4.Controls.Add(textBoxFilter);
             panel4.Dock = DockStyle.Right;
-            panel4.Location = new Point(852, 150);
+            panel4.Location = new Point(595, 150);
             panel4.Name = "panel4";
-            panel4.Size = new Size(200, 316);
+            panel4.Size = new Size(200, 232);
             panel4.TabIndex = 20;
             // 
             // Form1
@@ -284,7 +285,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 45, 53);
-            ClientSize = new Size(1052, 591);
+            ClientSize = new Size(795, 507);
             Controls.Add(panel4);
             Controls.Add(listBoxSongs);
             Controls.Add(panel3);
@@ -293,13 +294,15 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Apolz Audio Player";
             ((System.ComponentModel.ISupportInitialize)pictureBoxAlbum).EndInit();
-            ((System.ComponentModel.ISupportInitialize)trackBarVolume).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBarVolume).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -308,7 +311,6 @@
         private Label labelArtist;
         private Label labelTitle;
         private PictureBox pictureBoxAlbum;
-        private TrackBar trackBarVolume;
         private TextBox textBoxFilter;
         private Panel panel1;
         private Panel panel2;
@@ -328,5 +330,6 @@
         private Panel panel4;
         private InventorySystem.Controls.CustomButton customButton5;
         private InventorySystem.Controls.CustomButton customButton4;
+        private TrackBar trackBarVolume;
     }
 }

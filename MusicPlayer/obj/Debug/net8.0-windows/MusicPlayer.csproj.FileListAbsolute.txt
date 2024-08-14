@@ -29,3 +29,4 @@ C:\Users\symam\source\repos\MusicPlayer\MusicPlayer\obj\Debug\net8.0-windows\Mus
 C:\Users\symam\source\repos\MusicPlayer\MusicPlayer\obj\Debug\net8.0-windows\WinFormsApp1.Controls.CustomComboBox.resources
 C:\Users\symam\source\repos\MusicPlayer\MusicPlayer\obj\Debug\net8.0-windows\InventorySystem.Controls.CustomTextBox.resources
 C:\Users\symam\source\repos\MusicPlayer\MusicPlayer\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+C:\Users\symam\source\repos\MusicPlayer\MusicPlayer\obj\Debug\net8.0-windows\MusicPlayer.sourcelink.json
