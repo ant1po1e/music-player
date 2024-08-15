@@ -333,7 +333,20 @@ namespace MusicPlayer
                 labelMaxDuration.Text = "00:00";
                 buttonPlayPause.IconChar = FontAwesome.Sharp.IconChar.Play;
 
-                // ... (rest of the method remains the same)
+                switch (currentLoopMode)
+                {
+                    case LoopMode.LoopOne:
+                        player.controls.currentPosition = 0;
+                        player.controls.play();
+                        break;
+                    case LoopMode.LoopAll:
+                        PlayNextLoop();
+                        break;
+                    case LoopMode.NoLoop:
+                    default:
+                        // Do nothing, let the playback stop
+                        break;
+                }
             }
             else if ((WMPPlayState)NewState == WMPPlayState.wmppsPlaying)
             {
