@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             labelArtist = new Label();
             labelTitle = new Label();
             pictureBoxAlbum = new PictureBox();
@@ -43,17 +44,18 @@
             labelMinDuration = new Label();
             labelMaxDuration = new Label();
             buttonSelectFolder = new FontAwesome.Sharp.IconButton();
-            progressBarMusic = new ProgressBar();
             trackBarVolume = new TrackBar();
             listBoxSongs = new ListBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             progressTimer = new System.Windows.Forms.Timer(components);
             panel4 = new Panel();
+            trackBarDuration = new TrackBar();
             ((System.ComponentModel.ISupportInitialize)pictureBoxAlbum).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trackBarVolume).BeginInit();
             panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBarDuration).BeginInit();
             SuspendLayout();
             // 
             // labelArtist
@@ -126,6 +128,7 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(39, 55, 68);
+            panel3.Controls.Add(trackBarDuration);
             panel3.Controls.Add(buttonLoopMode);
             panel3.Controls.Add(buttonPrevious);
             panel3.Controls.Add(buttonNext);
@@ -133,7 +136,6 @@
             panel3.Controls.Add(labelMinDuration);
             panel3.Controls.Add(labelMaxDuration);
             panel3.Controls.Add(buttonSelectFolder);
-            panel3.Controls.Add(progressBarMusic);
             panel3.Controls.Add(trackBarVolume);
             panel3.Controls.Add(buttonShuffle);
             panel3.Dock = DockStyle.Bottom;
@@ -243,13 +245,6 @@
             buttonSelectFolder.UseVisualStyleBackColor = false;
             buttonSelectFolder.Click += buttonSelectFolder_Click;
             // 
-            // progressBarMusic
-            // 
-            progressBarMusic.Location = new Point(184, 101);
-            progressBarMusic.Name = "progressBarMusic";
-            progressBarMusic.Size = new Size(362, 12);
-            progressBarMusic.TabIndex = 20;
-            // 
             // trackBarVolume
             // 
             trackBarVolume.AutoSize = false;
@@ -280,6 +275,14 @@
             panel4.Size = new Size(200, 232);
             panel4.TabIndex = 20;
             // 
+            // trackBarDuration
+            // 
+            trackBarDuration.AutoSize = false;
+            trackBarDuration.Location = new Point(181, 93);
+            trackBarDuration.Name = "trackBarDuration";
+            trackBarDuration.Size = new Size(366, 33);
+            trackBarDuration.TabIndex = 27;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -292,6 +295,7 @@
             Controls.Add(panel2);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -304,6 +308,7 @@
             ((System.ComponentModel.ISupportInitialize)trackBarVolume).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBarDuration).EndInit();
             ResumeLayout(false);
         }
 
@@ -320,7 +325,6 @@
         private ListBox listBoxSongs;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Timer progressTimer;
-        private ProgressBar progressBarMusic;
         private Label labelMaxDuration;
         private FontAwesome.Sharp.IconButton buttonSelectFolder;
         private Label labelMinDuration;
@@ -332,5 +336,6 @@
         private InventorySystem.Controls.CustomButton customButton5;
         private InventorySystem.Controls.CustomButton customButton4;
         private TrackBar trackBarVolume;
+        private TrackBar trackBarDuration;
     }
 }

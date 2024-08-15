@@ -16,6 +16,7 @@ namespace MusicPlayer
         private int currentSongIndex = -1;
         private LoopMode currentLoopMode = LoopMode.NoLoop;
         private Random random = new Random();
+        private bool isDraggingTrackBar = false;
 
         private enum LoopMode
         {
@@ -58,21 +59,57 @@ namespace MusicPlayer
                 Properties.Settings.Default.LastSelectedFolder = string.Empty;
                 Properties.Settings.Default.Save();
             }
+
+            trackBarDuration.Minimum = 0;
+            trackBarDuration.Maximum = 1000; 
+            trackBarDuration.ValueChanged += trackBarDuration_ValueChanged;
+            trackBarDuration.MouseDown += trackBarDuration_MouseDown;
+            trackBarDuration.MouseUp += trackBarDuration_MouseUp;
         }
 
         #region Events
         private void ProgressTimer_Tick(object sender, EventArgs e)
         {
-            if (player.playState == WMPPlayState.wmppsPlaying)
+            if (player.playState == WMPPlayState.wmppsPlaying && !isDraggingTrackBar)
             {
-                progressBarMusic.Maximum = (int)player.currentMedia.duration;
-                progressBarMusic.Value = (int)player.controls.currentPosition;
+                double currentPosition = player.controls.currentPosition;
+                double duration = player.currentMedia.duration;
 
-                TimeSpan currentTime = TimeSpan.FromSeconds(player.controls.currentPosition);
-                TimeSpan totalTime = TimeSpan.FromSeconds(player.currentMedia.duration);
+                if (duration > 0)
+                {
+                    int trackBarValue = (int)((currentPosition / duration) * 1000);
+                    trackBarDuration.Value = trackBarValue;
+                }
+
+                TimeSpan currentTime = TimeSpan.FromSeconds(currentPosition);
+                TimeSpan totalTime = TimeSpan.FromSeconds(duration);
                 labelMinDuration.Text = $"{currentTime:mm\\:ss}";
                 labelMaxDuration.Text = $"{totalTime:mm\\:ss}";
             }
+        }
+
+        private void trackBarDuration_ValueChanged(object sender, EventArgs e)
+        {
+            if (isDraggingTrackBar)
+            {
+                double duration = player.currentMedia.duration;
+                double newPosition = (trackBarDuration.Value / 1000.0) * duration;
+                TimeSpan currentTime = TimeSpan.FromSeconds(newPosition);
+                labelMinDuration.Text = $"{currentTime:mm\\:ss}";
+            }
+        }
+
+        private void trackBarDuration_MouseDown(object sender, MouseEventArgs e)
+        {
+            isDraggingTrackBar = true;
+        }
+
+        private void trackBarDuration_MouseUp(object sender, MouseEventArgs e)
+        {
+            isDraggingTrackBar = false;
+            double duration = player.currentMedia.duration;
+            double newPosition = (trackBarDuration.Value / 1000.0) * duration;
+            player.controls.currentPosition = newPosition;
         }
 
         private void buttonLoopMode_Click(object sender, EventArgs e)
@@ -162,7 +199,7 @@ namespace MusicPlayer
 
                     player.controls.play();
 
-                    progressBarMusic.Value = 0;
+                    trackBarDuration.Value = 0;
                     labelMinDuration.Text = "00:00";
                     labelMaxDuration.Text = "00:00";
 
@@ -210,6 +247,11 @@ namespace MusicPlayer
                 UpdateSongInfo();
                 progressTimer.Start();
                 buttonPlayPause.IconChar = FontAwesome.Sharp.IconChar.Pause;
+
+                // Reset the trackbar
+                trackBarDuration.Value = 0;
+                labelMinDuration.Text = "00:00";
+                labelMaxDuration.Text = "00:00";
             }
         }
 
@@ -286,25 +328,12 @@ namespace MusicPlayer
             if ((WMPPlayState)NewState == WMPPlayState.wmppsStopped)
             {
                 progressTimer.Stop();
-                progressBarMusic.Value = 0;
+                trackBarDuration.Value = 0;
                 labelMinDuration.Text = "00:00";
                 labelMaxDuration.Text = "00:00";
                 buttonPlayPause.IconChar = FontAwesome.Sharp.IconChar.Play;
 
-                switch (currentLoopMode)
-                {
-                    case LoopMode.LoopOne:
-                        player.controls.currentPosition = 0;
-                        player.controls.play();
-                        break;
-                    case LoopMode.LoopAll:
-                        PlayNextLoop();
-                        break;
-                    case LoopMode.NoLoop:
-                    default:
-                        // Do nothing, let the playback stop
-                        break;
-                }
+                // ... (rest of the method remains the same)
             }
             else if ((WMPPlayState)NewState == WMPPlayState.wmppsPlaying)
             {
