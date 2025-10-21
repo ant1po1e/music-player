@@ -493,11 +493,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\WeatherApp - Copy\\WeatherApp\\SpecMusicPlayer.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\SpecMusicPlayer\\SpecMusicPlayer\\SpecMusicPlayer.csproj",
       "projectName": "SpecMusicPlayer",
-      "projectPath": "C:\\Users\\lenovo\\source\\repos\\WeatherApp - Copy\\WeatherApp\\SpecMusicPlayer.csproj",
+      "projectPath": "C:\\Users\\lenovo\\source\\repos\\SpecMusicPlayer\\SpecMusicPlayer\\SpecMusicPlayer.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\source\\repos\\WeatherApp - Copy\\WeatherApp\\obj\\",
+      "outputPath": "C:\\Users\\lenovo\\source\\repos\\SpecMusicPlayer\\SpecMusicPlayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

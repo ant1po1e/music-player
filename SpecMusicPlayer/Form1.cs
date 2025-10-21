@@ -85,7 +85,9 @@ namespace SpecMusicPlayer
 
                     audioFiles = Directory.GetFiles(currentFolderPath, "*.*", SearchOption.TopDirectoryOnly)
                         .Where(f => f.EndsWith(".mp3", StringComparison.OrdinalIgnoreCase) ||
-                                    f.EndsWith(".wav", StringComparison.OrdinalIgnoreCase))
+                                    f.EndsWith(".wav", StringComparison.OrdinalIgnoreCase) || 
+                                    f.EndsWith(".flac", StringComparison.OrdinalIgnoreCase) ||
+                                    f.EndsWith(".ogg", StringComparison.OrdinalIgnoreCase))
                         .ToArray();
 
                     if (audioFiles.Length == 0)
@@ -130,7 +132,7 @@ namespace SpecMusicPlayer
             timer.Start();
             playPauseButton.Text = "Pause";
 
-            this.Text = $"Spec Music Player | Now Playing: {Path.GetFileName(file)}";
+            this.Text = $"Spec Music Player | Now Playing: {Path.GetFileNameWithoutExtension(file)}";
         }
 
         private void OnPlaybackStopped(object? sender, StoppedEventArgs e)

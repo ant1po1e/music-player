@@ -27,3 +27,33 @@ C:\Users\lenovo\source\repos\WeatherApp - Copy\WeatherApp\obj\Release\net8.0-win
 C:\Users\lenovo\source\repos\WeatherApp - Copy\WeatherApp\obj\Release\net8.0-windows\SpecMusicPlayer.pdb
 C:\Users\lenovo\source\repos\WeatherApp - Copy\WeatherApp\obj\Release\net8.0-windows\SpecMusicPlayer.genruntimeconfig.cache
 C:\Users\lenovo\source\repos\WeatherApp - Copy\WeatherApp\obj\Release\net8.0-windows\ref\SpecMusicPlayer.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\SpecMusicPlayer.exe
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\SpecMusicPlayer.deps.json
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\SpecMusicPlayer.runtimeconfig.json
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\SpecMusicPlayer.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\SpecMusicPlayer.pdb
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\NAudio.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\NAudio.Asio.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\NAudio.Core.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\NAudio.Midi.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\NAudio.Wasapi.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\NAudio.WinForms.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\bin\Release\net8.0-windows\NAudio.WinMM.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\WinFormsApp1.Controls.CustomComboBox.resources
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\InventorySystem.Controls.CustomTextBox.resources
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.Form1.resources
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\WeatherApp.ProgressBar.resources
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.Properties.Resources.resources
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.csproj.GenerateResource.cache
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.sourcelink.json
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusi.9FC965C4.Up2Date
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\refint\SpecMusicPlayer.dll
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.pdb
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\SpecMusicPlayer.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\SpecMusicPlayer\SpecMusicPlayer\obj\Release\net8.0-windows\ref\SpecMusicPlayer.dll
