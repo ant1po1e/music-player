@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\lenovo\source\repos\WeatherApp\WeatherApp\Properties\PublishProfiles\FolderProfile3.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Controls\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\CustomCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\CustomComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\CustomDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\CustomPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\CustomRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Controls\CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
